@@ -1,0 +1,216 @@
+/*
+Theme Name: Santa Atualização cadastrais
+Author: MK(rj)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/*index*/
+#tela1{
+    background: #1664AC;
+    margin-top: 50%;
+}
+h1.logo-index{
+    text-align: center;
+    margin-top: 20%;
+}
+
+/*tela2*/
+header.topo {
+    background: #1664AC;
+}
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,0.5);
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.loaded {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../img/loading.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-background-size: cover;
+    background-size: cover;
+    margin: -20px 0 0 -20px;
+}
+
+#tela2{
+  background: #1664AC;
+}
+section.logo {
+    text-align: center;
+}
+.group{ 
+  position:relative; 
+  margin-bottom:30px; 
+  color:#fff;
+  top:0px;
+  width: 100%;
+}
+.group input[type="tel"],input[type="password"],input[type="text"]{
+  font-size:16px;
+  font-weight: bold;
+  padding:13px 5px 0px 2px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #fff;
+  color: #f36e25;
+  background:none;
+
+}
+.group input:focus{ outline:none; color:#f36e25; border: none; }
+
+.group input[type="submit"]:focus{
+  border: solid 1px;
+}
+
+.group label{
+  color:#fff; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:0px;
+  top:5px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.group input:focus ~ label, input:valid ~ label{
+  top:-5px;
+  font-size:12px;
+  color: #f36e25;
+}
+
+.bar  { position:relative; display:block; width:100%; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#f36e25; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+  color:#f36e25;
+}
+.bar:before {
+  left:50%;
+  color:#f36e25;
+}
+.bar:after {
+  right:50%; 
+  color:#f36e25;
+}
+
+.group input:focus ~ .bar:before, .group input:focus ~ .bar:after {
+  color:#f36e25; 
+  width:50%;
+}
+
+.highlight {
+  position:absolute;
+  height:0%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  color:#f36e25;
+}
+
+.group input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+  color:#f36e25;
+}
+
+@-webkit-keyframes inputHighlighter {
+  from { background:rgba(51,51,51, 0.7); }
+  to  { width:0; background:transparent; color:#f36e25;}
+  
+}
+@-moz-keyframes inputHighlighter {
+  from { background:rgba(51,51,51, 0.7); color:#f36e25;}
+  to  { width:0; background:transparent; }
+  
+}
+@keyframes inputHighlighter {
+  from { background:rgba(51,51,51, 0.7); color:#f36e25;}
+  to  { width:0; background:transparent; }
+  
+}
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+}
+section.formulario {
+    margin-top: 10%;
+}
+.rodape{
+  width: 100%;
+}
+
+/*tela 3*/
+
+
+/*tela 4*/
+.infoLib {
+    padding: 15px 20px 15px 20px;
+}
+.infoLib aside {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    color: #e40203;
+    line-height: 16px;
+}
+article.textoLib {
+    text-align: center;
+    margin-top: 3%;
+}
+.textoLib h4 {
+    font-size: 15px;
+}
+.textRed {
+    color: red;
+    font-weight: bold;
+}
+.group select{
+  border: none;
+  border-radius: 0;
+  border-bottom: solid 1px #e40203;
+  color: #e40203;
+  width: 99%;
+}
+
+/*tela 5*/
+.finish {
+    text-align: center;
+}
+
+@media(min-width:320px) {
+
+}
